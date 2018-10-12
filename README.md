@@ -1,2 +1,0 @@
-# FlappyPlane
-Tugas Developer Game
