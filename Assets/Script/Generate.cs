@@ -7,10 +7,12 @@ public class Generate : MonoBehaviour {
 
     public GameObject rocks;
     public Text ScoreText;
+    public Text Score;
     public static int score = 0;
 
     void Start()
     {
+        Score.text = "Score";
         score = 0;
         InvokeRepeating("CreateObstacle", 1f, 1.5f);
     }
@@ -22,6 +24,6 @@ public class Generate : MonoBehaviour {
     }
     void Update()
     {
-        ScoreText.text = "Score = " + score;
+        ScoreText.text = score.ToString();
     }
 }
